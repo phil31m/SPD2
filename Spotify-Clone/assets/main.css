@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Update the theme to match Spotify's green color scheme */
+:root {
+    --spotify-green: #1DB954;
+    --spotify-black: #191414;
+    --spotify-white: #FFFFFF;
+    --spotify-gray: #B3B3B3;
+}
+
+body {
+    background-color: var(--spotify-black);
+    color: var(--spotify-white);
+}
+
+button {
+    background-color: var(--spotify-green);
+    color: var(--spotify-white);
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+input {
+    background-color: var(--spotify-gray);
+    color: var(--spotify-white);
+}
+
+/* Update scrollbar styles */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
